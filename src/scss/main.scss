@@ -137,10 +137,10 @@ video {
   transition-duration: 0.5s;
 }
 
-.product.sketchbook .product-image img {
+.sketchbook .product-image img {
   transition: transform 0.4s;
 }
-.product.sketchbook .product-image:hover img {
+.sketchbook .product-image:hover img {
   transform: scale(1.2);
 }
 .product.sketchbook .product-image {
@@ -153,5 +153,21 @@ video {
 }
 .product.glue .product-image:hover {
   filter: blur(0px);
+}
+
+.share-list .share-icon {
+  opacity: 0;
+  transition: 0.4s;
+  transform: translateY(-50px);
+}
+.share-list .share-icon:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.share-list .share-icon:nth-child(3) {
+  transition-delay: 0.9s;
+}
+.share:hover .share-icon {
+  opacity: 1;
+  transform: translateY(0px);
 }
 // ---------------------------------------------
